@@ -1,0 +1,31 @@
+<app-adminheader></app-adminheader>
+<br>
+<br>
+<br>
+<div class="card-title">
+    <tr>
+        <th><b>NAME</b></th>
+        <th><b>E-MAIL</b></th>
+        <th><b>CONTACT</b></th>
+        
+      </tr>
+<div class="list-group" *ngFor="let user of users" >
+  
+        <tr>
+        <th>
+            {{user.username}}
+        </th>
+        <th>
+         {{user.mail}} 
+        </th>
+        <th>
+            {{user.contact}}
+        </th>
+        <th>
+            <button type="button" class="btn btn-danger" (click)="deleteUser(user.username)" >Delete</button>
+        </th>
+    </tr>
+    <hr>
+</div>
+
+</div>

@@ -1,0 +1,41 @@
+#div2{
+    align-items: center;
+    height: 100%;
+    align-content: center;
+padding-left: 50px;
+}
+.vertical-text{
+    writing-mode: vertical-lr;
+            text-orientation: upright;
+            font-size: 15px;
+            margin-top: 40px;
+            color: #0275d8;
+            text-align: center;
+           
+}
+
+
+.login{
+align-items: center;
+text-align: center;
+height: 100%;
+width: 100%;
+
+}
+.textbox{
+    border-radius: 10px;
+    border-width: 3px;
+    width: 230px;
+    padding-left: 30px;
+}
+#div2-2{
+    align-content: center;
+    padding-left: 150px; 
+    text-align: center;
+
+}
+#contact{
+    color:rgb(1, 70, 24);
+    font-size: 13px;
+}
+

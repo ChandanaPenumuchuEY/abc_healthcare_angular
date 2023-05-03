@@ -1,0 +1,35 @@
+<app-adminheader></app-adminheader>
+<br>
+<br>
+<br>
+<div class="card-title">
+    <tr>
+        <th><b>NAME</b></th>
+        <th><b>PRICE</b></th>
+        <th><b>SELLER</b></th>
+        <th><b>DESCRIPTION</b></th>
+        <th><b>DELETE</b></th>
+        
+      </tr>
+<div class="list-group" *ngFor="let medicine of medicines" >
+  
+        <tr>
+        <th>
+            {{medicine.name}}
+        </th>
+        <th>
+            Rs {{medicine.price}} 
+        </th>
+        <th>
+            {{medicine.seller}}
+        </th>
+        <th>
+              {{medicine.description}} 
+        </th>
+        <th>
+            <button type="button" class="btn btn-danger" (click)="deleteMedicine(medicine.name)" >Delete</button>
+        </th>
+    </tr>
+</div>
+
+</div>

@@ -1,0 +1,16 @@
+th{
+    align-items: center;
+    align-content: center;
+    width: 200px;
+    height:50px
+}
+tr{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+}
+.card-title{
+    width:900px;
+    align-items: center;
+}

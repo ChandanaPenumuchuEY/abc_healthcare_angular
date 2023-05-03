@@ -1,0 +1,81 @@
+<app-userheader></app-userheader>
+<br>
+<br>
+<br>
+
+
+<div class="container">
+  <div class="three-fourths">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">“AVAILABLE MEDICINES”</h2>
+        <div class="list-group" *ngFor="let medicine of medicines" >
+    <div  class="row" class="list-group-item list-group-item-action" >     
+                <tr>
+                <th>
+                    <br>
+                    <img src="assets/paracetmol.jpg" alt="paracetmol">
+                
+                </th>
+              
+              
+                <th>
+                    <br>
+                    <br>
+                    <br>
+                    <h5>{{medicine.name}}</h5>
+                    <h5>Rs {{medicine.price}} / tablet</h5>
+                    <h5>{{medicine.seller}} seller</h5>
+                    <h5>{{medicine.description}} </h5>
+                </th>
+                <th>
+                    <br>
+                    <br>
+                   <br>
+                  <br>
+                    <button type="button" class="btn btn-success" (click)="addToCart(medicine)">Add to cart</button>
+                </th>
+            </tr>
+            <br>
+            <br>
+            <br>
+            </div>
+
+     
+    
+       </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="one-fourth">
+<div class="head"><b>CART ITEMS</b>
+  <br>
+
+
+</div>
+
+<br>
+    <div class="list-group" *ngFor="let car of cart" >
+   <tr>
+    <th>
+{{car.name}}</th> 
+<th>{{car.price}}</th>
+<th>
+  <button type="button" class="btn btn-danger" (click)="deleteFromCart(car)">Del</button>
+</th>
+</tr>
+<hr>
+
+    </div>
+    <br>
+    <div class="total"><b>TOATAL  : Rs {{sum}}</b>
+<br>
+<br>
+<br>
+      <button type="button" class="btn btn-success" (click)="finalpage()">PURCHASE</button>
+  </div>
+  </div>
+
+  
+ <!-- // <app-cart [cartdata]="data"> </app-cart> -->

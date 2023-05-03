@@ -1,0 +1,23 @@
+#mainheader
+{
+color:white;
+
+}
+#logo{
+    margin-left: 30px;
+}
+.vl {
+    border-left: 1px solid white;
+    height:40px;
+    margin-right: 10px;
+  }
+  #admin{
+    margin-right: 60px;
+  }
+
+.input-group{
+width: 500px;
+}
+#cart{
+    margin-right: 30px;
+}
